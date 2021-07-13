@@ -30,49 +30,49 @@ console.log=function(){};console.assert=console.log;console.clear=console.log;co
 "use strict";
 
 var CONFIG = {
-  "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid",
-  "appStoreUrl": "https://apps.apple.com/app/two-dots/id880178264",
-  "amazonAppstoreUrl": "",
-  "I18": {
-    "locale": "en",
-    "strings": {
+  googlePlayUrl: "https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid",
+  appStoreUrl: "https://apps.apple.com/app/two-dots/id880178264",
+  amazonAppstoreUrl: "",
+  I18: {
+    locale: "en",
+    strings: {
       "Your score: %s": {
-        "en": "Your score: %s"
+        en: "Your score: %s"
       },
-      "Download": {
-        "en": "Download"
+      Download: {
+        en: "Download"
       }
     }
   },
-  "domBinds": [],
-  "application": {
-    "showFPS": false,
+  domBinds: [],
+  application: {
+    showFPS: false,
     //Determines the possible mistake radius
-    "validDistance": 50,
+    validDistance: 50,
     //Initial tutorial appearance delay
-    "firstTutorialTimer": 2000,
+    firstTutorialTimer: 2000,
     //Pause between each tutorial appearance
-    "repeatingTutorialTimer": 2000,
+    repeatingTutorialTimer: 2000,
     //Number of rounds
-    "rounds": 1,
+    rounds: 1,
     //Red stamp's text
-    "failStampText": "FAIL",
+    failStampText: "FAIL",
     //Green stamp's text
-    "winStampText": "WIN",
+    winStampText: "WIN",
     //Pulsing title that appears when the game is being played
-    "gamePulsingTitle": "Can you draw this?",
+    gamePulsingTitle: "Can you draw this?",
     //The description that appears under the title when the game is being played
-    "gameDescription": "no lifting your pen or overlapping lines",
+    gameDescription: "no lifting your pen or overlapping lines",
     //Pulsing title that appears on the winning page
-    "winningTitle": "WOW! You did it!",
+    winningTitle: "WOW! You did it!",
     //The description that appears under the title on the winning page
-    "winningDescription": "And what about this one?",
+    winningDescription: "And what about this one?",
     //Pulsing title that appears on the losing page
-    "losingTitle": "Maybe something easier?",
+    losingTitle: "Maybe something easier?",
     //The description that appears under the title on the losing page
-    "losingDescription": "try this one",
+    losingDescription: "try this one",
     //Cta button's text
-    "ctaText": "PLAY"
+    ctaText: "PLAY"
   }
 };
 </script>
@@ -96,32 +96,90 @@ var Preloader={};Preloader.show=function(){var e=".sk-fading-circle{width:100px;
         <script>
 "use strict";
 
-var PLATFORM = "facebook"; //var NATIVE_IMAGE = window.Image;
+var PLATFORM = "unity";
 
-window.addEventListener("load", domReadyHandler);
+try {
+  if (mraid.getState() === "loading") {
+    mraid.addEventListener("ready", mraidReadyHandler);
+  } else {
+    mraidReadyHandler();
+  }
+} catch (e) {
+  if (e.name === "ReferenceError") {
+    // mraid is not defined
+    window.addEventListener("load", domReadyHandler);
+  }
+}
+
+function runGame() {
+  if (runGame.launched) return;
+  runGame.launched = true;
+  Game.init();
+
+  try {
+    initListeners();
+  } catch (e) {} finally {
+    LayoutManager.fitLayout();
+  }
+}
 
 function domReadyHandler() {
   window.removeEventListener("load", domReadyHandler);
   runGame();
 }
 
-function runGame() {
-  if (runGame.launched) return;
-  runGame.launched = true; //window.Image = NATIVE_IMAGE;
+function mraidReadyHandler() {
+  mraid.removeEventListener("ready", mraidReadyHandler);
+  console.log("MRAID ready", window.location.href);
 
-  Game.init();
-  initListeners();
-  LayoutManager.fitLayout();
+  if (mraid.isViewable()) {
+    console.log("MRAID not viewable");
+    return mraidViewableHandler(true);
+  }
+
+  mraid.addEventListener("viewableChange", mraidViewableHandler);
+}
+
+function mraidViewableHandler(flag) {
+  if (flag) {
+    console.log("MRAID viewable", window.location.href);
+    mraid.removeEventListener("viewableChange", mraidViewableHandler);
+    runGame();
+  }
 }
 
 function initListeners() {
   window.addEventListener("resize", LayoutManager.fitLayout);
   setInterval(LayoutManager.fitLayout, 100);
+  mraid.addEventListener("stateChange", function (state) {
+    if (state === "expanded") {
+      runGame();
+      LayoutManager.fitLayout();
+    }
+  });
+  mraid.addEventListener("sizeChange", function () {
+    console.log("MRAID sizeChange", arguments);
+    LayoutManager.fitLayout();
+  });
+  mraid.addEventListener("viewableChange", function () {
+    console.log("MRAID viewableChange", arguments);
+    LayoutManager.fitLayout();
+  });
+  mraid.addEventListener("error", function () {
+    console.log("MRAID error", arguments);
+  });
 }
 
 function callSDK(e) {
   if (e === "download") {
-    FbPlayableAd.onCTAClick();
+    var userAgent = navigator.userAgent || navigator.vendor;
+    var url = CONFIG.appStoreUrl || CONFIG.appleUrl;
+
+    if (/android/i.test(userAgent)) {
+      url = CONFIG.googlePlayUrl || CONFIG.androidUrl;
+    }
+
+    mraid.open(url);
   }
 
   Game.emit('callSDK', e);
