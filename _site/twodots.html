@@ -1,0 +1,396 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #fcf9f3;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #fcf9f3;
+        background-color: #3d5279;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #fb746c;
+        color: #fcf9f3;
+    }
+
+    .project-description {
+        background-color: #fcf9f3;
+    } /*Change background of project desc*/
+ 
+    .project-general-info .fa {
+        color: #3d5279;
+        padding: 5px;
+        text-align: center;
+        margin-top: 20px;
+    } /*Change color of fa icons*/
+
+    .aftereffects {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #3d5279;
+        -webkit-mask:url("images/icons/AE.png") center/contain;
+          mask:url("images/icons/AE.png") center/contain;
+    }
+
+    .block {
+        color: #3d5279;
+        font-weight: 300;
+        font-size: 15px;
+        padding-top: 7%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        color: #3d5279;
+        font-weight: 300;
+        font-size: 18px;
+        margin-right: -10px;
+    }
+
+    .jekyll {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #3d5279;
+        -webkit-mask:url("images/icons/jekyll.png") center/contain;
+          mask:url("images/icons/jekyll.png") center/contain;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #3d5279;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .sublime {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #3d5279;
+        -webkit-mask:url("images/icons/sublime.png") center/contain;
+          mask:url("images/icons/sublime.png") center/contain;
+    }
+
+    .tags-block {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 7%;
+    }
+
+    .team {
+        margin-top: 3%;
+        color: #3d5279;
+        font-weight: 300;
+        line-height: 1.8em;
+        font-size: 17px;
+    }
+
+    h2 {
+        color: #3d5279;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.8em;
+    }
+
+    h3 {
+        color: #3d5279;
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 1.8em;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    a {
+        color: #3d5279;
+        font-size: 18px;
+    }
+
+    a:hover {
+        color: #fb746c;
+    }
+
+    p {
+        color: #3d5279;
+        font-weight: 300;
+        font-size: 18px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    img {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ios a {
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        margin-right: 50px;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+    } /*Change iOS button*/
+
+    .ios a:hover{
+        color: #ffffff;
+        background-color: #007aff;
+    }
+
+    .google a {
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+    } /*Change Google button*/
+
+    .google a:hover{
+        color: #ffffff;
+        background-color: #0d9d57;
+    }
+
+    @media only screen and (max-width: 768px) {
+        p {
+            font-size: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        a { 
+            font-size: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        h3 {
+            font-size: 18px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .ajax-page-nav {
+            padding-bottom: 5%;
+        }
+
+        .block {
+            padding-top: 15%;
+            font-size: 13px;
+        }
+
+        .ios a {
+            margin-right: 10px;
+            font-size: 16px
+        }
+
+        .google a{
+            font-size: 16px;
+        }
+
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto;
+        }
+
+        .grid-container > div {
+            font-size: 17px;
+            text-align: left;
+        }
+
+        .item1 { 
+            grid-column: 1;
+        }
+
+        .item2 { 
+            grid-column-end: 2;
+        }
+
+        .item3 { 
+            grid-column-end: span 3;
+        }
+
+        .tags-block {
+            padding-bottom: 15%;
+        }
+
+        .team {
+            font-size: 15px;
+        }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/twodots/TD-header.png" alt="header" style="border-radius: 20px;">
+            </div>
+
+            <h3>Two Dots is a free-to-play, casual mobile puzzle game for iOS and Android, developed and published by Playdots.</h3>
+
+            <div class="project-description" style="text-align: center; width: 100%;">
+                <ul class="project-general-info">
+                    <div class="grid-container">
+                      <div class="item1"><i class="fa fa-user-friends"></i>Playdots</div>
+                      <div class="item2"><i class="fa fa-globe"></i><a href="https://www.dots.co/twodots/" target="_blank">https://www.dots.co/twodots</a></div>
+                      <div class="item3"><i class="fa fa-calendar"></i> Oct 2015 - Current</div>  
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Links out -->
+            <div class="tags-block">
+                <ul class="tags">
+                    <li class="ios"><a href="https://apps.apple.com/us/app/two-dots/id880178264" target="_blank"><i class="fa fa-apple-alt"></i>&nbsp;&nbsp;iOS</a></li>
+                    <li class="google"><a href="https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid&hl=en_US&gl=US" target="_blank"><i class="fab fa-google-play"></i>&nbsp;&nbsp;Google Play</a></li>
+                </ul>
+            </div>
+            <!-- /Links out -->
+
+            <div class="owl-carousel portfolio-page-carousel">
+                    <img src="images/portfolio/full/twodots/TD-iOS_Screenshot-01.png" alt="iOS Screenshots" />
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-iOS_Screenshot-02.png" alt="iOS Screenshots" />
+                </div>   
+            </div>
+
+            <div class="portfolio-page-image" style="padding-top: 5%;">
+                <h2>APP ICON EXPLORATIONS</h2>
+                <p>The app icons change according to the content and event released in the game. I am responsible for testing and vetting them before they go live in the product. Below are some of the app icons I have designed.</p>
+            </div>
+            
+            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%">
+                    <img src="images/portfolio/full/twodots/TD-Test-Chobani.png" alt="Chobani App Icons">
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Test-Events.png" alt="Events App Icons" />
+                </div>
+            </div>
+
+            <div class="portfolio-page-image" style="padding-top: 5%;">
+                <h2>SCREENSHOT EXPLORATIONS</h2>
+                <p>Screenshots are part of the app store optimization package for both iOS and Android. Continual optimization is needed to improve conversion performance and follow current trends. Different geos and platforms also have diversified user needs.</p>
+            </div>
+
+            <div class="owl-carousel portfolio-page-carousel">
+                    <img src="images/portfolio/full/twodots/TD-Screenshots_Japan.png" alt="Japan Screenshots">
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Screenshots_Old.png" alt="Past Screenshots" />
+                </div>
+            </div>
+
+
+            <div class="portfolio-page-image" style="padding-top: 5%;">
+                <h2>STATIC AD BANNERS</h2>
+                <p>Facebook ad campaigns between 2015 - 2018 during a time before video ads became the standard.</p>
+            </div>
+
+            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 1%;">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Phone.png" alt="Gameboard Ad 01" />  
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-01.png" alt="Gameboard Ad 02" />
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-02.png" alt="Gameboard Ad 03" />
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Square.png" alt="Gameboard Ad 04" />
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Colorburst.png" alt="Gameboard Ad 05" />
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone.png" alt="Gameboard Ad 06" />
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone+WhiteBG.png" alt="Gameboard Ad 07" />
+                </div>
+            </div>
+
+            <div class="portfolio-page-image" style="padding-top: 5%;">
+                <h2>WEBSITE DESIGN</h2>
+                <p style="padding-bottom: 2%">Updating and creating web content was also one of my tasks at Dots. I re-designed and re-coded the Two Dots web page as well as other event pages, with additional support from co-founder Patrick and developer Andrei.</p>
+                <h2 style="border-radius: 10px; border-style: solid; border-width: 2px; width: fit-content; text-align: center; padding: 10px 20px 10px 20px; display: inline-block; font-size: 18px;">Click the images to view the live sites</h2>
+            </div>
+
+            <div class="owl-carousel portfolio-page-carousel">
+                    <a href="https://www.dots.co/twodots/" target="_blank"><img src="images/portfolio/full/twodots/TD-website.png" alt="Website" /></a>    
+                <div class="item">
+                    <a href="https://www.dots.co/twodots/treasure-hunts/" target="_blank"><img src="images/portfolio/full/twodots/TD-website_TH.png" alt="Event Page" /></a>
+                </div>
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+            
+                <!-- Footer  -->
+            <div class="project-description" style="text-align: center; width: 100%; padding-top: 10%;">
+                <h3>Team</h3>
+                    <ul class="project-general-info" style="display: inline-block; text-align: left;">
+                        <div class="team"><li><i class="fas fa-chart-line" style="padding-right: 10px; padding-left: 5px; color: #3d5279;" ></i>UA Lead: Jonathan Jung (current)</li></div>
+
+                        <div class="team"><li><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #3d5279"></i>Marketing Lead & Designer: Emily Lim</li></div>
+                    </ul>
+
+                <h3 style="padding-top: 3%">Tools</h3>
+                    <div class="photoshop"></div>
+                    <div class="aftereffects"></div>
+                    <div class="sublime"></div>
+                    <div class="jekyll"></div>
+
+                <div class="block">All rights reserved. © Playdots Inc. </div>
+            </div>
+                <!-- Footer -->
+
+        </div>
+    </div>
+</div>

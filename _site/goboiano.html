@@ -1,0 +1,251 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(241,241,241,1) 100%);
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #ffffff;
+        background-color: #ef5fa3;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #0ab2e7;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+        border-radius: 0;
+    } /*Change background of project desc*/
+
+    .project-general-info .fa {
+        color: #ef5fa3;
+        padding: 5px;
+        text-align: center;
+        margin-top: 20px;
+    } /*Change color of fa icons*/
+
+    .block {
+        color: #000000;
+        font-weight: 400;
+        font-size: 13px;
+        padding-top: 2%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        color: #000000;
+        font-weight: 400;
+        font-size: 17px;
+        margin-right: -10px;
+    }
+
+    .indesign {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #ef5fa3;
+        -webkit-mask:url("images/icons/ID.png") center/contain;
+        mask:url("images/icons/ID.png") center/contain;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #0ab2e7;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    h2 {
+        color: #000000;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: #000000;
+        font-size: 19px;
+        font-weight: 400;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #0ab2e7;
+    }
+
+    p {
+        color: #000000;
+        font-size: 17px;
+        padding-left: 50px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        p {
+            font-size: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        h2 {
+            font-size: 30px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        h3 {
+            font-size: 15px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        iframe {
+            height: 410px;
+        }
+
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto;
+        }
+
+        .grid-container > div {
+            font-size: 13px;
+            text-align: left;
+        }
+
+        .item1 { 
+            grid-column: 1;
+        }
+
+        .item2 { 
+            grid-column-end: 2;
+        }
+
+        .item3 { 
+            grid-column-end: span 3;
+        }
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="portfolio-page-image" style="height: 90%; width: 90%; margin-right: auto; margin-left: auto;">
+                <img src="images/portfolio/full/goboiano/GB-header.png" alt="GoBoiano header">
+            </div>
+
+            <div class="project-description" style="text-align: center; width: 100%; padding-top: 4%; padding-bottom: 3%; margin-top: 5%; margin-bottom: 7%;">
+                <h3>Initially pitched as a creators hub akin to Pixiv for the Anime Western audience, GoBoiano has evolved into a web media platform that delivers news and entertainment for Anime & Japanese culture.</h3>
+
+                <ul class="project-general-info" style="padding-top: 1%">
+                    <div class="grid-container">
+                        <div class="item1"><i class="fa fa-user-friends"></i>Maj Mack</div>
+                        <div class="item2"><i class="fa fa-globe" style="color: #0ab2e7;"></i><a href="http://goboiano.com/" target="_blank">http://goboiano.com/</a></div>
+                        <div class="item3"><i class="fa fa-calendar" style="color: #a8a936"></i> Jan - Oct 2014</div> 
+                    </div>
+                </ul>
+            </div>
+
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/goboiano/GB-branding guidelines_02.jpg" alt="GoBoiano Branding Guidelines">
+
+                <iframe src="images/portfolio/full/goboiano/GB-branding guidelines.pdf" width="100%" height="900px"></iframe>
+                    
+                <img src="images/portfolio/full/goboiano/GB-branding guidelines_08.jpg" alt="Goboiano Character Mascots" style="padding-top: 7%;">
+
+                <img src="images/portfolio/full/goboiano/GB-businesscards.png" alt="GoBoiano Business Cards" style="padding-top: 7%;">
+            </div>
+
+            <div class="owl-carousel portfolio-page-carousel">
+                <figure>
+                    <img src="images/portfolio/full/goboiano/GB-twitter.png" alt="GoBoiano Twitter page">
+                </figure>
+                <figure>
+                    <img src="images/portfolio/full/goboiano/GB-facebook.png" alt="GoBoiano Facebook page">
+                </figure>
+            </div>
+            
+            <div class="portfolio-page-image" style="text-align: center; margin-bottom: 7%; margin-top: 3%;">
+                <img src="images/portfolio/full/goboiano/Anni.gif" alt="GoBoiano Anni">
+                <img src="images/portfolio/full/goboiano/Mei.gif" alt="GoBoiano Mei">
+            </div>
+
+            <div class="portfolio-page-image" style="width: 80%; height: 80%; margin-right: auto; margin-left: auto;">       
+                <img src="images/portfolio/full/goboiano/GB-wireframes_article.png" alt="Goboiano Character Mascots">
+            </div>
+
+            <div class="portfolio-page-image" style="text-align: center; padding-top: 7%">
+                <img src="images/portfolio/full/goboiano/GB-AniRevo.png" alt="Goboiano Ani Revo poster">
+                <img src="images/portfolio/full/goboiano/GB-footer.png" alt="Goboiano Footer">
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+
+                <!-- Project Description -->
+            <div class="project-description" style="text-align: center; width: 100%;  padding-bottom: 4%; padding-top: 3%;">
+                <h3>Team</h3>
+                    <ul class="project-general-info" style="display: inline-block; text-align: left;">
+                        <div class="team"><li><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #f6b65f;"></i>CEO & Marketing Manager: Maj Mack</li></div>
+                        <div class="team"><li><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #a881a9"></i>Graphic Designer: Emily Lim</li></div>
+                    </ul>
+
+                    <br><br>
+
+                <h3>Tools</h3>
+                    <div class="indesign"></div>
+                    <div class="photoshop"></div>
+
+                    <br><br><br>
+
+                <div class="block">All rights reserved. © Goboiano.</div>
+            </div>
+                <!-- Project Description -->
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,155 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #ffffff;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #919191;
+        background-color: #ffffff;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #919191;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #919191;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #919191;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .portfolio-page-image {
+        text-align: center;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #919191;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .silhouettecameo {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #919191;
+        -webkit-mask:url("images/icons/silhouettecameo.png") center/contain;
+          mask:url("images/icons/silhouettecameo.png") center/contain;
+    }
+
+    h3 {
+        color: #5c5c5c;
+    }
+
+    h5 {
+        color: #5c5c5c;
+    }
+
+    p {
+        color: #5c5c5c;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/ourwedding/1.png" alt="1">
+            </div>
+
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/ourwedding/2.png" alt="2">
+            </div>
+
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/ourwedding/3.png" alt="3">
+            </div>
+
+            <div class="owl-carousel portfolio-page-carousel">
+                <img src="images/portfolio/full/ourwedding/4.png" alt="4" />    
+                    <div class="item">
+                <img src="images/portfolio/full/ourwedding/5.png" alt="5" />
+                    </div>
+                    <div class="item">
+                <img src="images/portfolio/full/ourwedding/6.png" alt="6" />
+                    </div>
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+        </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h5>360 BOOK SERIES<h5>
+                        <h3>Our Wedding</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Personal</p></li>
+                        <li><p><i class="fa fa-calendar"></i>2015</p></li>
+                    </ul>
+
+                    <p class="text-justify">Papercrafting project inspired by Yusuke Oono's 360 books using similar techniques before mass production.</p>
+
+                    <p class="text-justify">Our Wedding was a 40 page wedding montage 360 book, constructed with heavy premium grade white cardstock in Japanese style binding and rotates 360 degrees to form a panoramic 3D paper sculpture.</p>
+
+                    <br>
+
+                    <h5>Tools used</h5>
+                    <p class="text-justify">
+                        <div class="photoshop"></div>
+                        <div class="silhouettecameo"></div>
+                    </p>
+
+                    <br><br>
+
+                    <p class="text-justify">All rights reserved. © Emily Lim, MuEnLi.</p>
+                </div>
+                <!-- Project Description -->
+            </div>
+
+        </div>
+    </div>
+</div>

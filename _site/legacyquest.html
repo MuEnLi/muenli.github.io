@@ -1,0 +1,144 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #00202f;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #ffffff;
+        background-color: #218dc2;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #134378;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #00202f;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #218dc2;
+    } /*Change color of h3 underline*/
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #218dc2;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+        mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .project-general-info .fa {
+        color: #218dc2;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    h3 {
+        color: #ffffff;
+    }
+
+    h5 {
+        color: #ffffff;
+    }
+
+    p {
+        color: #ffffff;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/full/legacyquest/LQ-Newsletter_CBT.png" alt="LQ Email Newsletter">
+                </div>
+
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%;">
+                    <img src="images/portfolio/full/legacyquest/LQ-Appadvice_halfsheet.png" alt="" />    
+                        <div class="item">
+                    <img src="images/portfolio/full/legacyquest/LQ-Ad-01.png" alt="LQ-Ad-01" />
+                        </div>
+                        <div class="item">
+                    <img src="images/portfolio/full/legacyquest/LQ-Ad-02.png" alt="LQ-Ad-02" />
+                        </div>
+                        <div class="item">
+                    <img src="images/portfolio/full/legacyquest/LQ-Ad-03.png" alt="LQ-Ad-03" />
+                        </div>
+                </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Legacy Quest</h3>
+                    </div>
+
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Nexon M</p></li>
+                        <li><p><i class="fa fa-globe"></i> Discontinued in May, 2017</p></li>
+                        <li><p><i class="fa fa-calendar"></i> 2014 - 2015</p></li>
+                    </ul>
+
+                    <br>
+
+                    <p class="text-justify">Legacy Quest was a free-to-play, action RPG, rogue-like, dungeon crawler mobile game. It was developed by Socialspiel Entertainment and published by Nexon M. It was released for both iOS and Android.</p>
+
+                    <p class="text-justify">During my time with Legacy Quest, I created static ads and marketing email campaigns during the game's closed beta launch.</p>
+
+                    <br>
+
+                    <h5>Team</h5>
+                        <ul class="project-general-info">
+                            <li><p><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #218dc2;"></i>Game Producer: Laine Baker</p></li>
+                            <li><p><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #218dc2"></i>Marketing Artist: Emily Lim</p></li>
+                        </ul>
+
+                    <br>
+
+                    <h5>Tools</h5>
+                        <div class="photoshop"></div>
+
+                    <br><br><br>
+
+                    <p class="text-justify">All rights reserved. © Socialspiel and Nexon M.</p>
+                </div>
+                <!-- Project Description -->
+
+            </div>
+        </div>
+    </div>
+</div>

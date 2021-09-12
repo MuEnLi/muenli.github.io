@@ -1,0 +1,128 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background: rgb(255,237,171);
+        background: linear-gradient(0deg, rgba(255,237,171,1) 0%, rgba(255,197,171,1) 100%);
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #000000;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #f37b7e;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #f37b7e;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .portfolio-page-image {
+        text-align: center;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #f37b7e;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    h3 {
+        color: #000000;
+    }
+
+    p {
+        color: #000000;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/sweettoothparty/sweettoothparty.gif" alt="sweettoothparty">
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+        </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Sweet Tooth Party!</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Final Senior Project</p></li>
+                        <li><p><i class="fa fa-calendar"></i> 2013</p></li>
+                    </ul>
+
+                    <p class="text-justify">Final Senior project - Sweet Tooth Party! was a 2D arcade platformer game developed using the Gamemaker game engine.</p>
+
+                    <p class="text-justify">Inspired by Super Mario Bros, Sweet Tooth Party! was about a tooth that travelled across candy land, beat candy and grew stronger with milk, eventually meeting its final boss: The Dentist.</p>
+
+                    <br>
+
+                    <h5>Tools used</h5>
+                    <p class="text-justify">
+                        <div class="photoshop"></div>
+                    </p>
+
+                    <br><br>
+                    
+                    <p class="text-justify">All rights reserved. © Emily Lim, MuEnLi.</p>
+                <!-- Project Description -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

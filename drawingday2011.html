@@ -1,0 +1,164 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #f7eedf;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #978c76;
+        background: #f7eedf;
+        border-radius: .5em;
+        box-shadow: 0 0 0 .2em #978c76;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #978c76;
+        color: #f7eedf;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #978c76;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #978c76;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40px 40px;
+        grid-gap: 0px;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        color: #978c76;
+        font-weight: 500;
+        font-size: 30px;
+        margin-right: -10px;
+    }
+
+    .lightbox .mfp-img a {
+        z-index: 9999;
+        position: relative;
+    }
+
+    .mfp-figure .figure .mfp-container a {
+        z-index: 9999;
+        position: relative;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #978c76;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    h3 {
+        color: #000000;
+    }
+
+    h5{
+        color: #000000;
+    }
+
+    p {
+        color: #000000;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #f7ce28;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/drawingday2011/drawingday-2011.jpg" alt="drawingday-2011" style="border-radius: 20px;">
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+        </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Drawing Day 2011</h3>
+                    </div>
+                    
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Publication</p></li>
+                        <li><p><i class="fab fa-amazon" style="margin-left: 5px; padding-right: 15px; color: #978c76;"></i><a href="https://www.amazon.com/Drawing-Day-2011-Dropped-Everything/dp/1463580371" target="_blank">Available on Amazon</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> 2011</p></li>
+                    </ul>
+
+                    <p class="text-justify">Illustration selected and published in 'Drawing Day 2011' by Mick Gow. The project was a celebration to showcase the work of many illustrators around the world.</p>
+
+                    <br>
+
+                    <h5>Tools used</h5>
+                    <p class="text-justify">
+                        <div class="grid-container">
+                            <div class="item1"><i class="fas fa-pencil-alt" style="font-size: 22px; color: #978c76;"></i></div>
+                            <div class="item2"><div class="photoshop"></div></div> 
+                        </div>
+                    </p>
+
+                    <br>
+
+                    <h5>Book Preview</h5>
+                    <figure>
+                        <a class="lightbox" title="Wireframe Proposals" href="images/portfolio/full/drawingday2011/drawingday2011-book.png"><img src="images/portfolio/full/drawingday2011/drawingday2011-book.png" alt="book preview" class="lightbox mfp-iframe"></a>
+                    </figure>
+
+                    <br><br>
+
+                    <p class="text-justify">All rights reserved. © Mick Gow and Emily Lim, MuEnLi.</p>
+                </div>
+                <!-- Project Description -->
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,172 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #ffffff;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #ffffff;
+        background-color: #6e5e81;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #000000;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #6e5e81;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #6e5e81;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .portfolio-page-image {
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40px 40px;
+        grid-gap: 0px;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        color: #6e5e81;
+        font-weight: 500;
+        font-size: 30px;
+        margin-right: -10px;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #6e5e81;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    h3 {
+        color: #000000;
+    } 
+    h4 {
+        color: #000000;
+        font-size: 25px;
+    }
+
+    h5{
+        color: #000000;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #6e5e81;
+    }
+
+    p {
+        color: #000000;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <h4>PERSONAL ART</h4>
+                    <img src="images/portfolio/full/gaiaonline/tera.png" alt="tera online">
+                    <img src="images/portfolio/full/gaiaonline/Gaia-AV2015.gif" alt="personal avatar">
+                    <img src="images/portfolio/full/gaiaonline/GaiaNPC-Kanoko.png" alt="Kanoko NPC" >
+                        
+                <h4 style="padding-top: 10%;">PRIVATE WORK</h4>
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws1.png" alt="paws1">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws2.png" alt="paws2">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws3.png" alt="paws3">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws8.png" alt="paws4">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws9.png" alt="paws5">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws10.png" alt="paws6">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws14.png" alt="paws7">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws15.png" alt="paws8">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws16.png" alt="paws9">
+                    <img src="images/portfolio/full/gaiaonline/gaia-paws17.png" alt="paws10">
+                    <img src="images/portfolio/full/gaiaonline/antiku-ceres.png" alt="Antiku" style="padding-top: 10%;">
+                    <img src="images/portfolio/full/gaiaonline/gaia-02.png" alt="gaia-02">
+                    <img src="images/portfolio/full/gaiaonline/gaia-03.png" alt="gaia-32">
+                    <img src="images/portfolio/full/gaiaonline/gaia-bellatrix.png" alt="Bellatrix">
+            </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+
+    </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Gaia Online</h3>
+                    </div>
+
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Personal & Private Work</p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href="https://www.gaiaonline.com/" target="_blank">https://www.gaiaonline.com/</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> 2006 - 2015</p></li>
+                    </ul>
+
+                    <p class="text-justify">Gaia Online is an anime-themed social networking and forums-based website. Illustrations produced were based on user generated avatars and non-playable characters.</p>
+
+                    <br>
+
+                    <h5>Tools</h5>
+                        <div class="grid-container">
+                            <div class="item1"><i class="fas fa-pencil-alt" style="font-size: 22px; color: #6e5e81;"></i></div>
+                            <div class="item2"><div class="photoshop"></div></div> 
+                        </div>
+
+                    <br><br><br>
+
+                    <p class="text-justify">All rights reserved. © Gaia Online and their respective owners.</p>
+                <!-- Project Description -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

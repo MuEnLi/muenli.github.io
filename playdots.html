@@ -1,0 +1,179 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #76c7c3;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #76c7c3;
+        background-color: #ffffff;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #000000;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #ffffff;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #76c7c3;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #76c7c3;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .jekyll {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #76c7c3;
+        -webkit-mask:url("images/icons/jekyll.png") center/contain;
+          mask:url("images/icons/jekyll.png") center/contain;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #76c7c3;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .sublime {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #76c7c3;
+        -webkit-mask:url("images/icons/sublime.png") center/contain;
+          mask:url("images/icons/sublime.png") center/contain;
+    }
+
+    h3 {
+        color: #000000;
+    }
+
+    h5 {
+        color: #000000;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #76c7c3;
+    }
+
+    p {
+        color: #000000;
+    }
+
+    .lightbox .mfp-img a {
+        z-index: 9999;
+        position: relative;
+    }
+
+    .mfp-figure .figure .mfp-container a {
+        z-index: 9999;
+        position: relative;
+    }
+
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+        
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/dots/dotsxk-connectedbydots.gif" alt="connectedbydots-gif">
+            </div>
+
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/dots/dots-kickstarter-site.png" alt="dots-kickstarter-site">
+            </div>
+
+            <p style="text-align: center; color: #ffffff;">All rights reserved. © Playdots Inc.</p>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+        </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Dots + Kickstarter</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Dots & Kickstarter collaboration</p></li>
+                        <li><p><i class="fa fa-globe"></i><a href="https://www.dots.co/connect/" target="_blank"> https://www.dots.co/connect</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> Summer 2016</p></li>
+                    </ul>
+
+                    <p class="text-justify">'Connected by Dots' was a marketing, branding initiative originally started to support indie creators by promoting their projects similar to the company's founding with the support of Betaworks. Although the initiative never went live, it was an exciting opportunity to branch out with Kickstarter to support projects outside of gaming.</p>
+
+                    <br>
+
+                    <h5>Team</h5>
+                        <ul class="project-general-info">
+                            <li><p><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #76c7c3;"></i>Project Lead: Patrick Moberg</p></li>
+                            <li><p><i class="fas fa-pencil-alt" style="padding-right: 10px; padding-left: 5px; color: #76c7c3"></i>Brand Manager: Megan King</p></li>
+                            <li><p><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #76c7c3"></i>Designer & Web Developer: Emily Lim</p></li>
+                        </ul>
+
+                    <br>
+
+                    <h5>Tools used</h5>
+                        <p class="text-justify">
+                            <div class="photoshop"></div>
+                            <div class="sublime"></div>
+                            <div class="jekyll"></div>
+                        </p>
+
+                    <br> 
+
+                    <h5>Wireframe proposals</h5>
+                        <figure>
+                            <a class="lightbox" title="Wireframe Proposals" href="images/portfolio/full/dots/proposals.png"><img src="images/portfolio/full/dots/proposals.png" alt="wireframe proposals" class="lightbox mfp-iframe"></a>
+                        </figure>
+                </div>
+                <!-- Project Description -->
+            </div>
+
+        </div>
+    </div>
+</div>

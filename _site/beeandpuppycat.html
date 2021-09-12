@@ -1,0 +1,158 @@
+<style type="text/css">
+    .ajax-page-wrapper {
+        background-color: #040721;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item a {
+        color: #ffffff;
+        background-color: #fda2c6;
+        border-radius: 10px;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #a43950;
+        color: #ffffff;
+    } 
+
+    .project-description {
+        background-color: #040721;
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #fda2c6;
+    } /*Change color of h3 underline*/
+
+    .project-general-info .fa {
+        color: #fda2c6;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    .medibang {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #fda2c6;
+        -webkit-mask:url("images/icons/medibang.png") center/contain;
+          mask:url("images/icons/medibang.png") center/contain;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #fda2c6;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .procreate {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #fda2c6;
+        -webkit-mask:url("images/icons/procreate.png") center/contain;
+          mask:url("images/icons/procreate.png") center/contain;
+    }
+
+    h3 {
+        color: #ffffff;
+    }
+
+    h5 {
+        color: #ffffff;
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover {
+        color: #fda2c6;
+    }
+
+    p {
+        color: #ffffff;
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-7 portfolio-block">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/bee&puppycat/Art2018_Bee&Puppycat.png" alt="Bee & Puppycat Maplestory" style="border-radius: 20px;">
+            </div>
+
+            <br>
+
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/bee&puppycat/Art2018-Bee+Puppycat.png" alt="Bee & Puppycat in space" style="border-radius: 20px;">
+            </div>
+                
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+
+        </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h5>FANART<h5>
+                        <h3>Bee & Puppycat</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Personal</p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href="https://frederatorstudios.com/shows/bee-puppycat/" target="_blank"> https://frederatorstudios.com/shows/bee-puppycat/</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> July - August 2018</p></li>
+                    </ul>
+
+                    <p class="text-justify">Fanart project featuring the main characters of the series- Bee & Puppycat.</p>
+
+                    <br>
+
+                    <h5>Tools used</h5>
+                        <p class="text-justify">
+                            <div class="medibang"></div>
+                            <div class="procreate"></div>
+                            <div class="photoshop"></div>
+                        </p>
+
+                    <br><br>
+
+                    <p class="text-justify">All rights reserved. © Frederator Studios.</p>
+                </div>
+                <!-- Project Description -->
+            </div>
+            
+        </div>
+    </div>
+</div>
