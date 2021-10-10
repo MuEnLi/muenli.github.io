@@ -1,19 +1,33 @@
 <style type="text/css">
+    .ajax-page-content {
+        background-color: #0f0f0f;
+    }
+
     .ajax-page-wrapper {
         background-color: #0f0f0f;
     } /*Change background*/
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: 30px;
+    }
 
     .ajax-page-nav > div.nav-item a {
         color: #000000;
         background: linear-gradient(0deg, rgba(71,56,28,1) 0%, rgba(187,163,76,1) 100%);
         border-radius: .5em;
         box-shadow: 0 0 0 .2em #69604c;
+        position: fixed;
     } /*Change close button*/
 
     .ajax-page-nav > div.nav-item a:hover {
         background: #483919;
         color: #ffffff;
-    } 
+    }
+
+    .page-row {
+        margin-right: 50px;
+        margin-left: 0;
+    }
 
     .project-description {
         background-color: #0f0f0f;
@@ -34,7 +48,7 @@
 
     .block {
         color: #ffffff;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 13px;
     }
 
@@ -93,27 +107,23 @@
 
     @media only screen and (max-width: 768px) {
         p {
-            font-size: 0px;
+            font-size: 14px;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 18px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 14px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
-        }
-
-        .ajax-page-nav {
-            padding-bottom: 5%;
         }
 
         .grid-container {
@@ -122,7 +132,7 @@
         }
 
         .grid-container > div {
-            font-size: 13px;
+            font-size: 14px;
             text-align: left;
         }
 
@@ -137,6 +147,14 @@
         .item3 { 
             grid-column-end: span 3;
         }
+
+        .tags-block {
+            padding-bottom: 15%;
+        }
+
+        .team {
+            font-size: 14px;
+        }
     }
 </style>
 
@@ -148,7 +166,7 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;">
+        <div class="page-row" style="text-align: center;">
             <div class="portfolio-page-image" style="padding-bottom: 3%">
                 <img src="images/portfolio/full/legionofheroes/LoH-Feature_Daphne.png" alt="LoH Feature Banner">
             </div>
@@ -166,11 +184,11 @@
             </div>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 15%; margin-bottom: -2%;">
-                <h2 style="color: #ffffff; text-align: left;">APP ICON EXPLORATION</h2>
-                <p style="text-align: left">Google Play</p>
+                <h2 style="color: #ffffff; text-align: center;">APP ICON EXPLORATION</h2>
+                <p style="text-align: center">Google Play</p>
             </div>
 
-            <div class="owl-carousel portfolio-page-carousel">
+            <div class="owl-carousel portfolio-page-carousel" style="height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
                 <img src="images/portfolio/full/legionofheroes/LoH_AppIcon_Male.png" alt="Male Hero App Icon"/>    
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH_AppIcon_Daphne_Blue.png" alt="Daphne Blue App Icon"/> 
@@ -181,11 +199,11 @@
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH_AppIcon_Daphne_Purple.png" alt="Daphne Purple App Icon"/> 
                     </div>
-            </div>
+            </div><br><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 7%">
-                <h2 style="color: #ffffff; text-align: left;">STATIC AD BANNERS</h2>
-                <p style="text-align: left">User Acquisition</p>
+                <h2 style="color: #ffffff; text-align: center;">STATIC AD BANNERS</h2>
+                <p style="text-align: center">User Acquisition</p>
             </div>
 
             <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 2%; height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
@@ -199,23 +217,23 @@
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH-FBUA-04.png" alt="UA Ad 04" /> 
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%;">
-                <h2 style="color: #ffffff; text-align: left;">EMAIL CAMPAIGNS</h2>
-                <p style="text-align: left">Marketing mailchimp email campaigns announcing special updates and events.</p>
+                <h2 style="color: #ffffff; text-align: center;">EMAIL CAMPAIGNS</h2>
+                <p style="text-align: center">Marketing mailchimp email campaigns announcing special updates and events.</p>
             </div>
 
-            <div class="portfolio-page-image">
+            <div class="portfolio-page-image" style="height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
                 <img src="images/portfolio/full/legionofheroes/LoH-Newsletters.png" alt="Email Newsletters">
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 8%">
-                <h2 style="color: #ffffff; text-align: left;">IN-GAME BANNERS</h2>
-                <p style="text-align: left">Apart from developing marketing assets, I was also tasked with producing in-game assets to promote special characters and events.</p>
+                <h2 style="color: #ffffff; text-align: center;">IN-GAME BANNERS</h2>
+                <p style="text-align: center">Apart from developing marketing assets, I was also tasked with producing in-game assets to promote special characters and events.</p>
             </div>                
 
-            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 5%;">
+            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 5%; height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
                 <img src="images/portfolio/full/legionofheroes/LoH-App_DarkKnight.png" alt="Dark Knight Banner" />    
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH-App_FairyReturn.png" alt="Fairy Return Banner" /> 
@@ -229,23 +247,23 @@
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH-App_guildwar.png" alt="Guild War Banner" /> 
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%">
-                <h2 style="color: #ffffff; text-align: left;">CLASS ICONS</h2>
-                <p style="text-align: left">Character icons to categorize the different heroes based on their job/ class type.</p>
+                <h2 style="color: #ffffff; text-align: center;">CLASS ICONS</h2>
+                <p style="text-align: center">Character icons to categorize the different heroes based on their job/ class type.</p>
             </div>
             
-            <div class="portfolio-page-image">
+            <div class="portfolio-page-image" style="height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
                 <img src="images/portfolio/full/legionofheroes/LoH-Icons_Class.png" alt="Class Icons">
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%">
-                <h2 style="color: #ffffff; text-align: left;">IN-GAME LOGO DESIGNS</h2>
-                <p style="text-align: left">Almost every event that is introduced in Legion of Heroes gets their own feature logo to highlight their impact on the game.</p>
+                <h2 style="color: #ffffff; text-align: center;">IN-GAME LOGO DESIGNS</h2>
+                <p style="text-align: center">Almost every event that is introduced in Legion of Heroes gets their own feature logo to highlight their impact on the game.</p>
             </div>
 
-            <div class="owl-carousel portfolio-page-carousel">
+            <div class="owl-carousel portfolio-page-carousel" style="height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
                 <img src="images/portfolio/full/legionofheroes/LoH-Logo_GuildWar.png" alt="Guild War Logo" style="border-radius: 30px;">
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH-Logo_Ascension.png" alt="Ascension Logo" style="border-radius: 30px;">
@@ -253,7 +271,7 @@
                     <div class="item">
                 <img src="images/portfolio/full/legionofheroes/LoH-Logo_LunarNewYear.png" alt="Chinese New Year 02" style="border-radius: 30px;">
                     </div>
-            </div>
+            </div><br><br>
 
                 <!--
                 <div class="portfolio-page-image">
@@ -279,7 +297,7 @@
 
                 <!-- Project Description -->
             <div class="project-description" style="text-align: center; width: 100%; padding-top: 3%; padding-bottom: 4%; margin-top: 7%">
-                <h3>Team</h3>
+                <h2>Team</h2>
                     <ul class="project-general-info" style="display: inline-block; text-align: left;">
                         <div class="team"><li><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #bba34a;"></i>Producer: Yoonjin Kim </li></div>
                         <div class="team"><li><i class="fas fa-table" style="padding-right: 10px; padding-left: 5px; color: #bba34a"></i>Assistant Producer: Brian Hong</li></div>
@@ -288,10 +306,10 @@
 
                     <br><br>
 
-                <h3>Tools</h3>
+                <h2>Tools</h2>
                     <div class="photoshop"></div>
 
-                    <br><br><br>
+                    <br><br>
 
                 <div class="block" style="padding-top: 3%">All rights reserved. © NDOORS & Nexon M.</div>
             </div>

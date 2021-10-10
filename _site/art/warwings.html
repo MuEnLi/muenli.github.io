@@ -1,12 +1,21 @@
 <style type="text/css">
+    .page-ajax-loaded {
+    background-color: rgb(127, 127, 127);
+    }
+
     .ajax-page-wrapper {
         background-color: rgb(127, 127, 127);
     } /*Change background*/
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: 30px;
+    }
 
     .ajax-page-nav > div.nav-item a {
         color: #ffffff;
         background-color: #9bc360;
         border-radius: 10px;
+        position: fixed;
     } /*Change close button*/
 
     .ajax-page-nav > div.nav-item a:hover {
@@ -14,8 +23,14 @@
         color: #ffffff;
     } 
 
+    .page-row {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
     .project-description {
         background-color: #ffffff;
+        text-align: center;
     } /*Change background of project desc*/
 
     .project-general-info .fa {
@@ -43,7 +58,7 @@
     .grid-container > div {
         text-align: center;
         color: #000000;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 17px;
         margin-right: -10px;
     }
@@ -71,19 +86,19 @@
     .team {
         margin-top: 3%;
         color: #000000;
-        font-size: 15px;
+        font-size: 17px;
     }
 
     h2 {
         color: #000000;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 600;
     }
 
     h3 {
         color: #000000;
-        font-size: 19px;
-        font-weight: 400;
+        font-size: 22px;
+        font-weight: 500;
         padding-right: 50px;
         padding-left: 50px;
     }
@@ -91,28 +106,31 @@
     p {
         color: #000000;
         font-size: 17px;
-        padding-left: 50px;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 950px) {
         p {
-            font-size: 0px;
+            font-size: 14px;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 18px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 14px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
+        }
+
+        .ajax-page-nav {
+            padding-bottom: 5%;
         }
 
         .grid-container {
@@ -121,7 +139,7 @@
         }
 
         .grid-container > div {
-            font-size: 13px;
+            font-size: 14px;
             text-align: left;
         }
 
@@ -136,6 +154,10 @@
         .item3 { 
             grid-column-end: span 3;
         }
+
+        .team {
+            font-size: 14px;
+        }
 </style>
 
 <div id="ajax-page" class="ajax-page-content">
@@ -146,12 +168,12 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;">
+        <div class="page-row" style="text-align: center;">
             <div class="portfolio-page-image" style="height: 80%; width: 80%; margin-left: auto; margin-right: auto;">
                 <img src="images/portfolio/full/warwings/ww_mainpage_banner.png" alt="WW-MainPage_Banner">
             </div>
 
-            <div class="project-description" style="text-align: center; width: 100%; padding-top: 4%; padding-bottom: 3%; margin-top: 5%; margin-bottom: 5%;">
+            <div class="project-description" style="text-align: center; padding-top: 4%; padding-bottom: 3%; margin-top: 5%; margin-bottom: 5%;">
                 <h3>War Wings was a free-to-play, 3D WWII dogfighting mobile game developed by Mobile Fish and published by Nexon M.</h3>
 
                 <ul class="project-general-info" style="padding-top: 1%">
@@ -161,7 +183,7 @@
                         <div class="item3"><i class="fa fa-calendar"></i> Aug 2014 - Jun 2015</div> 
                     </div>
                 </ul>
-            </div>
+            </div><br>
 
             <div class="owl-carousel portfolio-page-carousel" style="margin-left: -20px;">
                 <img src="images/portfolio/full/warwings/WW-Screenshots_Android-01.png" alt="WW-Screenshot_Android-01" />    
@@ -171,15 +193,15 @@
                     <div class="item">
                 <img src="images/portfolio/full/warwings/WW-Screenshots_Android-03.png" alt="WW-Screenshot_Android-03" />  
                     </div>
-            </div>
+            </div><br>
 
             <div class="project-description" style="text-align: center; width: 100%; padding-top: 4%; padding-bottom: 3%; margin-top: 5%; margin-bottom: 5%;">
                 <h3>War Wings was initially available for Android only before the rights were released back to Mobile Fish in 2015 due to consolidation.</h3>
-            </div>
+            </div><br><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 7%">
-                <h2 style="color: #ffffff; text-align: left;">STATIC AD BANNERS</h2>
-                <p style="text-align: left; color: #ffffff; margin-bottom: -2%">User Acquisition</p>
+                <h2 style="color: #ffffff; text-align: center;">STATIC AD BANNERS</h2>
+                <p style="text-align: center; color: #ffffff; margin-bottom: -2%">User Acquisition</p>
             </div>
 
             <div class="owl-carousel portfolio-page-carousel" style="height: 80%; width: 80%; margin-left: auto; margin-right: auto; padding-bottom: 3%;">
@@ -193,11 +215,11 @@
                     <div class="item">
                 <img src="images/portfolio/full/warwings/WW-FB_Ad-04.png" alt="WW-FB_Ad-04" />  
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%;">
-                <h2 style="color: #ffffff; text-align: left;">GAME UI ICONS</h2>
-                <p style="color: #ffffff; text-align: left">In-game icons to represent the different tiers and upgrades available to improve the players' plane performance. Not only was I producing assets for marketing but also in developing the UI / UX flow of the user's journey throughout the game.</p>
+                <h2 style="color: #ffffff; text-align: center;">GAME UI ICONS</h2>
+                <p style="color: #ffffff; text-align: center">In-game icons to represent the different tiers and upgrades available to improve the players' plane performance. Not only was I producing assets for marketing but also in developing the UI / UX flow of the user's journey throughout the game.</p>
             </div>
             
             <div class="owl-carousel portfolio-page-carousel" style="height: 80%; width: 80%; margin-left: auto; margin-right: auto;">
@@ -211,51 +233,51 @@
                     <div class="item">
                 <img src="images/portfolio/full/warwings/icons-green.png" alt="WW Icons-Green" />  
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%">
-                <h2 style="color: #ffffff; text-align: left;">UX / UX DESIGN FLOW</h2>
+                <h2 style="color: #ffffff; text-align: center;">UX / UX DESIGN FLOW</h2>
             </div>
                 
-            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 5%;">
+            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 5%; width: 70%; margin: 0 auto; text-align: center; ">
                 <figure>
-                    <h3 style="color: #ffffff; text-align: left;">Gameplay Control Settings</h3>
-                    <img src="images/portfolio/full/warwings/WW-UI_Hanger.png" alt="Main Screen - Hangar Base" style="margin-top: -10%">
+                <p style="color: #ffffff; text-align: center;">Main Hangar</p>
+                    <img src="images/portfolio/full/warwings/WW-UI_Hanger.png" alt="Main Screen - Hangar Base">
                 </figure>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Main mission Flow</h3>
+                <p style="color: #ffffff; text-align: center;">Main mission Flow</p>
                     <img src="images/portfolio/full/warwings/WW-UI_Mission.png" alt="Main mission Flow">
                         </div>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Plane Upgrades</h3>
+                <p style="color: #ffffff; text-align: center;">Plane Upgrades</p>
                     <img src="images/portfolio/full/warwings/WW-UI_Upgrades.png" alt="Plane Upgrades">
                         </div>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Leaderboard</h3>
+                <p style="color: #ffffff; text-align: center;">Leaderboard</p>
                     <img src="images/portfolio/full/warwings/WW-UI_Leaderboard.png" alt="Leaderboard">
                         </div>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Daily Login Reward</h3>
+                <p style="color: #ffffff; text-align: center;">Daily Login Reward</h3>
                     <img src="images/portfolio/full/warwings/WW-UI_DailyLogin.png" alt="Daily Login Reward">
                         </div>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Tutorial</h3>
+                <p style="color: #ffffff; text-align: center;">Tutorial</p>
                     <img src="images/portfolio/full/warwings/WW-UI_Tutorial.png" alt="Tutorial">
                         </div>
                         <div class="item">
-                <h3 style="color: #ffffff; text-align: left;">Gameplay Control Settings</h3>
+                <p style="color: #ffffff; text-align: center;">Gameplay Control Settings</p>
                     <img src="images/portfolio/full/warwings/WW-UI_Calibrate.png" alt="Gameplay Control Settings">
                         </div>
-            </div>
+            </div><br><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 8%">
-                <h2 style="color: #ffffff; text-align: left;">CHARACTER MASCOT DESIGN</h2>
-                <p style="text-align: left; color: #ffffff;">Original mascot design by Mobile Fish, with instructions from Nexon M to redesign her to fit mission storyline.</p>
-            </div>
+                <h2 style="color: #ffffff; text-align: center;">CHARACTER MASCOT DESIGN</h2>
+                <p style="text-align: center; color: #ffffff;">Original mascot design by Mobile Fish, with instructions from Nexon M to redesign her to fit mission storyline.</p>
+            </div><br>
 
             <div class="portfolio-page-image">
                 <img src="images/portfolio/full/warwings/Main-Danielle.png" alt="British Mascot Danielle">
-            </div>
+            </div><br><br>
 
                 <!--
                 <div class="portfolio-page-image">
@@ -283,8 +305,10 @@
             <div class="project-description" style="text-align: center; width: 100%; padding-top: 5%; padding-bottom: 5%; margin-top: 10%;">
                 <p>War Wings was a C rank priority project that received A rank development treatment thanks to the Nexon M team in charge of the project. There was close collaboration between Mobile Fish, in Beijing, to overhaul its UX/ UI design to cater heavily to Western audiences.</p>
 
+                <br>
+
                 <h3>Team</h3>
-                    <ul class="project-general-info" style="display: inline-block; text-align: left;">
+                    <ul class="project-general-info" style="display: inline-block; text-align: center;">
                         <div class="team"><li><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #9bc360;"></i>Producer: Jacob Zabie</li></div>
                         <div class="team"><li><i class="fas fa-table" style="padding-right: 10px; padding-left: 5px; color: #9bc360"></i>Assistant Producer: Brian Hong</li></div>
                         <div class="team"><li><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #9bc360"></i>Marketing & UI/UX Artist: Emily Lim</li></div>

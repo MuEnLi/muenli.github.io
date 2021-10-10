@@ -1,19 +1,36 @@
 <style type="text/css">
+    .page-ajax-loaded {
+        background: rgba(241,241,239,1);
+    }
+
     .ajax-page-wrapper {
-        background: linear-gradient(0deg, rgba(211,212,204,1) 0%, rgba(241,241,239,1) 100%);;
+        background: rgba(241,241,239,1);
     } /*Change background*/
+
+    .ajax-page-wrapper > div.row {
+        margin-right: 50px;
+    }
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: 50px;
+        padding-right: 5px;
+        padding-top: 30px;
+        z-index: 999;
+    }
 
     .ajax-page-nav > div.nav-item a {
         color: #e64120;
         background: #f1f1ef;
-        border-radius: .5em;
-        box-shadow: 0 0 0 .2em #e64120;
+        border-radius: 10px;
+        -webkit-box-shadow:inset 0.25px 0.25px 0 3px #e64120;
+        box-shadow:inset 0.25px 0.25px 0 3px #e64120;
+        position: fixed;
     } /*Change close button*/
 
     .ajax-page-nav > div.nav-item a:hover {
         background-color: #e64120;
         color: #ffffff;
-    } 
+    }
 
     .project-description {
         background-color: #ffffff;

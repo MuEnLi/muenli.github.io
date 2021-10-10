@@ -1,17 +1,31 @@
 <style type="text/css">
+    .page-ajax-loaded {
+    background-color: #fcf9f3;
+    }
+
     .ajax-page-wrapper {
         background-color: #fcf9f3;
     } /*Change background*/
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: 30px;
+    }
 
     .ajax-page-nav > div.nav-item a {
         color: #fcf9f3;
         background-color: #3d5279;
         border-radius: 10px;
+        position: fixed;
     } /*Change close button*/
 
     .ajax-page-nav > div.nav-item a:hover {
         background-color: #fb746c;
         color: #fcf9f3;
+    }
+
+    .page-row {
+        margin-right: 50px;
+        margin-left: 0;
     }
 
     .project-description {
@@ -37,9 +51,15 @@
 
     .block {
         color: #3d5279;
-        font-weight: 300;
-        font-size: 15px;
+        font-weight: 400;
+        font-size: 13px;
         padding-top: 7%;
+    }
+
+    .colorblock {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 20px 50px 20px 50px;
     }
 
     .grid-container {
@@ -105,14 +125,14 @@
     h2 {
         color: #3d5279;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1.8em;
     }
 
     h3 {
         color: #3d5279;
-        font-weight: 300;
-        font-size: 27px;
+        font-weight: 400;
+        font-size: 24px;
         line-height: 1.8em;
         padding-right: 100px;
         padding-left: 100px;
@@ -170,9 +190,9 @@
         background-color: #0d9d57;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 950px) {
         p {
-            font-size: 0px;
+            font-size: 14px;
             padding-right: 0px;
             padding-left: 0px;
         }
@@ -182,14 +202,14 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 18px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h3 {
-            font-size: 18px;
+            font-size: 16px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
@@ -201,16 +221,15 @@
 
         .block {
             padding-top: 15%;
-            font-size: 13px;
         }
 
         .ios a {
             margin-right: 10px;
-            font-size: 16px
+            font-size: 14px
         }
 
         .google a{
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .grid-container {
@@ -219,7 +238,7 @@
         }
 
         .grid-container > div {
-            font-size: 17px;
+            font-size: 14px;
             text-align: left;
         }
 
@@ -240,7 +259,7 @@
         }
 
         .team {
-            font-size: 15px;
+            font-size: 14px;
         }
 </style>
 
@@ -252,7 +271,7 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;">
+        <div class="page-row" style="text-align: center;">
             <div class="portfolio-page-image">
                 <img src="images/portfolio/full/twodots/TD-header.png" alt="header" style="border-radius: 20px;">
             </div>
@@ -282,20 +301,24 @@
                     <img src="images/portfolio/full/twodots/TD-iOS_Screenshot-01.png" alt="iOS Screenshots" />
                 <div class="item">
                     <img src="images/portfolio/full/twodots/TD-iOS_Screenshot-02.png" alt="iOS Screenshots" />
-                </div>   
+                </div> 
             </div>
+            <br><br><br>
 
-            <div class="portfolio-page-image" style="padding-top: 5%;">
-                <h2>APP ICON EXPLORATIONS</h2>
-                <p>The app icons change according to the content and event released in the game. I am responsible for testing and vetting them before they go live in the product. Below are some of the app icons I have designed.</p>
-            </div>
-            
-            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%">
-                    <img src="images/portfolio/full/twodots/TD-Test-Chobani.png" alt="Chobani App Icons">
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Test-Events.png" alt="Events App Icons" />
+            <div class="colorblock">
+                <div class="portfolio-page-image" style="padding-top: 5%;">
+                    <h2>APP ICON EXPLORATIONS</h2>
+                    <p>The app icons change according to the content and event released in the game. I am responsible for testing and vetting them before they go live in the product. Below are some of the app icons I have designed.</p>
                 </div>
-            </div>
+            
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%;">
+                    <img src="images/portfolio/full/twodots/TD-Test-Chobani.png" alt="Chobani App Icons">
+                        <div class="item">
+                    <img src="images/portfolio/full/twodots/TD-Test-Events.png" alt="Events App Icons">
+                        </div>
+                </div>
+                <br>
+            </div><br>
 
             <div class="portfolio-page-image" style="padding-top: 5%;">
                 <h2>SCREENSHOT EXPLORATIONS</h2>
@@ -307,40 +330,41 @@
                 <div class="item">
                     <img src="images/portfolio/full/twodots/TD-Screenshots_Old.png" alt="Past Screenshots" />
                 </div>
-            </div>
+            </div><br><br>
 
+            <div class="colorblock">
+                <div class="portfolio-page-image" style="padding-top: 5%;">
+                    <h2>STATIC AD BANNERS</h2>
+                    <p>Facebook ad campaigns between 2015 - 2018 during a time before video ads became the standard.</p>
+                </div>
 
-            <div class="portfolio-page-image" style="padding-top: 5%;">
-                <h2>STATIC AD BANNERS</h2>
-                <p>Facebook ad campaigns between 2015 - 2018 during a time before video ads became the standard.</p>
-            </div>
-
-            <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 1%;">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Phone.png" alt="Gameboard Ad 01" />  
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-01.png" alt="Gameboard Ad 02" />
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 1%;">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Phone.png" alt="Gameboard Ad 01" />  
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-01.png" alt="Gameboard Ad 02" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-02.png" alt="Gameboard Ad 03" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Square.png" alt="Gameboard Ad 04" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Colorburst.png" alt="Gameboard Ad 05" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone.png" alt="Gameboard Ad 06" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone+WhiteBG.png" alt="Gameboard Ad 07" />
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard-02.png" alt="Gameboard Ad 03" />
-                </div>
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Square.png" alt="Gameboard Ad 04" />
-                </div>
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Colorburst.png" alt="Gameboard Ad 05" />
-                </div>
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone.png" alt="Gameboard Ad 06" />
-                </div>
-                <div class="item">
-                    <img src="images/portfolio/full/twodots/TD-Ads_Gameboard_Moonstone+WhiteBG.png" alt="Gameboard Ad 07" />
-                </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="padding-top: 5%;">
                 <h2>WEBSITE DESIGN</h2>
                 <p style="padding-bottom: 2%">Updating and creating web content was also one of my tasks at Dots. I re-designed and re-coded the Two Dots web page as well as other event pages, with additional support from co-founder Patrick and developer Andrei.</p>
-                <h2 style="border-radius: 10px; border-style: solid; border-width: 2px; width: fit-content; text-align: center; padding: 10px 20px 10px 20px; display: inline-block; font-size: 18px;">Click the images to view the live sites</h2>
+                <h2 style="border-radius: 10px; border-style: solid; border-width: 2px; width: fit-content; text-align: center; padding: 10px 20px 10px 20px; display: inline-block; font-size: 14px;">Click the images to view the live sites</h2>
             </div>
 
             <div class="owl-carousel portfolio-page-carousel">
@@ -348,7 +372,7 @@
                 <div class="item">
                     <a href="https://www.dots.co/twodots/treasure-hunts/" target="_blank"><img src="images/portfolio/full/twodots/TD-website_TH.png" alt="Event Page" /></a>
                 </div>
-            </div>
+            </div><br><br>
 
                 <!--
                 <div class="portfolio-page-image">
@@ -373,7 +397,7 @@
                 </script>
             
                 <!-- Footer  -->
-            <div class="project-description" style="text-align: center; width: 100%; padding-top: 10%;">
+            <div class="project-description" style="text-align: center; width: 100%; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; background-color: #ffffff;">
                 <h3>Team</h3>
                     <ul class="project-general-info" style="display: inline-block; text-align: left;">
                         <div class="team"><li><i class="fas fa-chart-line" style="padding-right: 10px; padding-left: 5px; color: #3d5279;" ></i>UA Lead: Jonathan Jung (current)</li></div>

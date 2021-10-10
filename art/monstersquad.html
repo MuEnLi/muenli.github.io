@@ -1,19 +1,33 @@
 <style type="text/css">
+    .ajax-page-content {
+        background-color: #0ea5e7;
+    }
+
     .ajax-page-wrapper {
-        background: linear-gradient(0deg, rgba(16,107,188,1) 0%, rgba(14,181,253,1) 100%);;
+        background-color: #0ea5e7;
     } /*Change background*/
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: 30px;
+    }
 
     .ajax-page-nav > div.nav-item a {
         color: #ffffff;
         background: linear-gradient(0deg, rgba(182,135,69,1) 0%, rgba(246,205,125,1) 100%);
         border-radius: .5em;
         box-shadow: 0 0 0 .1em #7b5123;
+        position: fixed;
     } /*Change close button*/
 
     .ajax-page-nav > div.nav-item a:hover {
         background: #503522;
         color: #fff9e4;
-    } 
+    }
+
+    .page-row {
+        margin-right: 50px;
+        margin-left: 0;
+    }
 
     .project-description {
         background-color: #f1d19b;
@@ -34,8 +48,8 @@
 
     .block {
         color: #341b05;
-        font-weight: 500;
-        font-size: 15px;
+        font-weight: 400;
+        font-size: 13px;
     }
 
     .grid-container {
@@ -51,7 +65,6 @@
         color: #341b05;
         font-weight: 500;
         font-size: 18px;
-        margin-right: -10px;
     }
 
     .photoshop {
@@ -81,34 +94,30 @@
         color: #341b05;
         font-weight: 500;
         font-size: 24px;
-        padding-right: 100px;
-        padding-left: 100px;
     }
 
     p {
         color: #341b05;
         font-weight: 500;
         font-size: 17px;
-        padding-right: 50px;
-        padding-left: 50px;
     }
 
     @media only screen and (max-width: 768px) {
         p {
-            font-size: 0px;
+            font-size: 14px;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 18px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
         }
 
         h3 {
-            font-size: 17px;
+            font-size: 14px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
@@ -117,10 +126,6 @@
         .ajax-page-nav {
             padding-bottom: 5%;
         }
-
-        .block {
-        font-size: 13px;
-        }
   
         .grid-container {
             display: inline-grid;
@@ -128,7 +133,7 @@
         }
 
         .grid-container > div {
-            font-size: 15px;
+            font-size: 14px;
             text-align: left;
         }
 
@@ -145,7 +150,7 @@
         }
 
         .team {
-            font-size: 15px;
+            font-size: 14px;
         }
 </style>
 
@@ -157,13 +162,13 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;">
+        <div class="page-row" style="text-align: center;">
             <div class="portfolio-page-image" style="padding-bottom: 5%;">
                 <img src="images/portfolio/full/monstersquad/MSQ-Feature.png" alt="">
             </div>
 
             <div class="project-description"  style="text-align: center; width: 100%; padding-top: 5%; padding-bottom: 5%">
-                <h3>Monster Squad was a free-to-play, cute monster, RPG mobile game developed by Nexon GT and published by Nexon M. It was available for both iOS and Android.</h3>
+                <h3 style="padding-left: 5%; padding-right: 5%">Monster Squad was a free-to-play, cute monster, RPG mobile game developed by Nexon GT and published by Nexon M. It was available for both iOS and Android.</h3>
 
                 <ul class="project-general-info" style="padding-top: 1%">
                     <div class="grid-container">
@@ -182,11 +187,11 @@
                     <div class="item">
                 <img src="images/portfolio/full/monstersquad/MSQ-Android_Screenshots-03.png" alt="Screenshots-03" />
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%;">
-                <h2 style="color: #ffffff; text-align: left; margin-left: 50px; margin-right: 50px;">STATIC AD BANNERS</h2>
-                <p style="text-align: left; color: #ffffff;">User Acquisition</p>
+                <h2 style="color: #ffffff; text-align: center; margin-right: auto; margin-left: auto;">STATIC AD BANNERS</h2>
+                <p style="text-align: center; color: #ffffff; margin-right: auto; margin-left: auto;">User Acquisition</p>
             </div>
 
             <div class="owl-carousel portfolio-page-carousel" style="height: 80%; width: 80%; margin-right: auto; margin-left: auto;">
@@ -244,10 +249,10 @@
                     <div class="item">
                 <img src="images/portfolio/full/monstersquad/set2/MSQ-FB_UA-06.png" alt="UA-06" />
                     </div>
-            </div>
+            </div><br>
 
             <div class="portfolio-page-image" style="width: 100%; padding-top: 10%">
-                <h2 style="color: #ffffff; text-align: left; margin-left: 50px; margin-right: 50px;">CHARACTER GIF ANIMATIONS</h2>
+                <h2 style="color: #ffffff; text-align: center; margin-right: auto; margin-left: auto;">CHARACTER GIF ANIMATIONS</h2>
             </div>
 
             <div class="owl-carousel portfolio-page-carousel" style="padding-top: 3%; height: 90%; width: 90%; margin-right: auto; margin-left: auto;">
@@ -267,7 +272,7 @@
                     <div class="item">
                 <img src="images/portfolio/full/monstersquad/set3/MSQ-UA_face-ani6.gif" alt="ani6" style="border-radius: 30px;" />
                     </div>
-            </div>
+            </div><br>
 
                 <!--
                 <div class="portfolio-page-image">
@@ -293,7 +298,7 @@
 
                 <!-- Project Description -->
             <div class="project-description" style="text-align: center; width: 100%; padding-top: 5%; padding-bottom: 5%; margin-top: 10%">
-                <h3>Team</h3>
+                <h2>Team</h2>
                     <ul class="project-general-info" style="display: inline-block; text-align: left;">
                         <div class="team"><li><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #9e7131;"></i>Producer: Donghwa (Jamie) Lee</li></div>
                         <div class="team"><li><i class="fas fa-table" style="padding-right: 10px; padding-left: 5px; color: #9e7131"></i>Assistant Producer: Brian Hong</li></div>
@@ -302,7 +307,7 @@
 
                     <br><br>
 
-                    <h3>Tools</h3>
+                    <h2>Tools</h2>
                         <div class="photoshop"></div>
 
                     <br><br><br>

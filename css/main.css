@@ -1323,9 +1323,9 @@ body > footer .copyrights {
   font-size: 11px;
   line-height: 1.2em;
   bottom: 32px;
-  left: 15px;
+  left: 10px;
   position: relative;
-  margin-right: 15px;
+  margin-right: 10px;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1469,13 +1469,14 @@ body > footer .copyrights {
 }
 
 .ajax-page-wrapper {
-  max-width: 1500px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px 60px 50px;
 }
 
 .ajax-page-nav {
   text-align: right;
+  position: relative;
 }
 
 .ajax-page-nav > div.nav-item {
