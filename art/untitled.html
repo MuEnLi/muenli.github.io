@@ -93,9 +93,36 @@
         text-align: center;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 950px) {
+         .ajax-page-wrapper {
+            max-width: 100%;
+        }
+
+        .ajax-page-nav {
+            padding-bottom: 5%;
+        }
+
+        .ajax-page-nav > div.nav-item a {
+            max-width: 30px;
+            max-height: 30px;
+        }
+
+        .ajax-page-nav > div.nav-item {
+            margin-right: 15px;
+        }
+
+        .ajax-page-nav > div.nav-item a i {
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .page-row {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+
         h3 {
-            font-size: 14px;
+            font-size: 12px;
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
@@ -105,12 +132,9 @@
             font-size: 14px;
         }
 
-        .ajax-page-nav {
-            padding-bottom: 5%;
-        }
-
         .block {
-        padding-top: 10%;
+            font-size: 12px;
+            padding-top: 10%;
         }
 
         .grid-container {
@@ -120,7 +144,7 @@
         }
 
         .grid-container > div {
-            font-size: 14px;
+            font-size: 12px;
             text-align: left;
         }
 
@@ -130,6 +154,10 @@
 
         .item2 { 
             grid-column-end: 2;
+        }
+
+        .social-links a {
+            color: #fa75ac;
         }
 </style>
 
@@ -157,11 +185,11 @@
                         <div class="item2"><i class="fa fa-calendar"></i> February 2018</div> 
                     </div>
                 </ul>
-            </div><br><br>
+            </div><br>
 
             <div class="portfolio-page-image" style="padding-bottom:5%">
                 <img src="images/portfolio/full/untitled/untitled-compilation.png" alt="IG compilation">
-            </div>
+            </div><br>
 
                 <!--
                 <div class="portfolio-page-image">
