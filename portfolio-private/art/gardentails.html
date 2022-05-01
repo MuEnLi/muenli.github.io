@@ -1,0 +1,412 @@
+<style type="text/css">
+    .page-ajax-loaded {
+        background-color: #ffffff;
+    }
+
+    .ajax-page-wrapper {
+        background-color: #ffffff;
+    } /*Change background*/
+
+    .ajax-page-nav > div.nav-item {
+        margin-right: -30px;
+    }
+
+    .ajax-page-nav > div.nav-item a {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 1000;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: rgb(29,116,243);
+        color: #ffffff;
+    }
+
+    .page-row {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
+    .project-description {
+        background-color: #ffffff;
+    } /*Change background of project desc*/
+ 
+    .project-general-info .fa {
+        color: #000000;
+        padding: 5px;
+        text-align: center;
+        margin-top: 20px;
+    } /*Change color of fa icons*/
+
+    .aftereffects {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #000000;
+        -webkit-mask:url("images/icons/AE.png") center/contain;
+          mask:url("images/icons/AE.png") center/contain;
+    }
+
+    .block {
+        color: #000000;
+        font-weight: 400;
+        font-size: 13px;
+        padding-top: 7%;
+    }
+
+    .colorblock {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 20px 30px 20px 30px;
+    }
+
+    .confidential {
+        background-color: black;
+        text-align: center;
+        max-width: 100%;
+        z-index: 2000;
+    }
+
+    .confidential h1{
+        color: white;
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .confidential p {
+        color: white;
+        padding-bottom: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+        margin-right: -10px;
+    }
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #000000;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+          mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .aftereffects {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #000000;
+        -webkit-mask:url("images/icons/AE.png") center/contain;
+          mask:url("images/icons/AE.png") center/contain;
+    }
+
+    .tags-block {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 7%;
+    }
+
+    .team {
+        margin-top: 3%;
+        color: #000000;
+        font-weight: 300;
+        line-height: 1.8em;
+        font-size: 17px;
+    }
+
+    .portfolio-page-image h2 {
+        color: #000000;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.8em;
+        text-align: center;
+    }
+
+    h3 {
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.8em;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    a {
+        color: #000000;
+        font-size: 18px;
+    }
+
+    a:hover {
+        color: #fb746c;
+    }
+
+    p {
+        color: #000000;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ios a {
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        margin-right: 50px;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+    } /*Change iOS button*/
+
+    .ios a:hover{
+        color: #ffffff;
+        background-color: #007aff;
+    }
+
+    .google a {
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+    } /*Change Google button*/
+
+    .google a:hover{
+        color: #ffffff;
+        background-color: #0d9d57;
+    }
+
+    @media only screen and (max-width: 950px) {
+        .ajax-page-wrapper {
+            max-width: 100%;
+        }
+
+        .ajax-page-nav {
+            padding-bottom: 5%;
+        }
+
+        .ajax-page-nav > div.nav-item a {
+            max-width: 30px;
+            max-height: 30px;
+        }
+
+        .ajax-page-nav > div.nav-item {
+            margin-right: 15px;
+        }
+
+        .ajax-page-nav > div.nav-item a i {
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .confidential h1{
+        margin-top: 10%;
+        font-size: 24px;
+        }
+
+        .page-row {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+
+        p {
+            font-size: 12px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        a { 
+            font-size: 100%;
+        }
+
+        h2 {
+            font-size: 16px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        h3 {
+            font-size: 14px;
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .block {
+            padding-top: 15%;
+            font-size: 12px;
+        }
+
+        .ios a {
+            margin-right: 10px;
+            font-size: 14px
+        }
+
+        .google a {
+            font-size: 14px;
+        }
+
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto;
+        }
+
+        .grid-container > div {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .item1 { 
+            grid-column: 1;
+        }
+
+        .item2 { 
+            grid-column-end: 2;
+        }
+
+        .item3 { 
+            grid-column-end: span 3;
+        }
+
+        .social-links a {
+            color: #fa75ac;
+        }
+
+        .tags-block {
+            padding-bottom: 15%;
+        }
+
+        .team {
+            font-size: 12px;
+        }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="confidential">
+        <h1>The nature of this work is confidential</h1>
+        <p>I led the marketing effort and participated in the production of ads & app store assets between 2019-2021. Our team resumed responsibility once again in 2022.</p>
+    </div>
+
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        
+
+        <div class="page-row" style="text-align: center;">
+            <div class="portfolio-page-image">
+                <img src="images/portfolio/full/gardentails/GT-feature.png" alt="header" style="margin-left: 20px; z-index: -1;">
+            </div>
+
+            <h3>Build your own garden by completing Match 3 puzzles. Unlock flowers, bushes and friendly animals in this relaxing and peaceful world.</h3>
+
+            <div class="project-description" style="text-align: center; width: 100%;">
+                <ul class="project-general-info">
+                    <div class="grid-container">
+                      <div class="item1"><i class="fa fa-user-friends"></i>Playdots</div>
+                      <div class="item3"><i class="fa fa-calendar"></i> 2019 - Current</div>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Links out -->
+            <div class="tags-block">
+                <ul class="tags">
+                    <li class="ios"><a href="https://apps.apple.com/gb/app/garden-tails/id1523064992" target="_blank"><i class="fa fa-apple-alt"></i>&nbsp;&nbsp;iOS</a></li>
+                    <li class="google"><a href="https://play.google.com/store/apps/details?id=com.weplaydots.gardenvariety&hl=en_US&gl=US" target="_blank"><i class="fab fa-google-play"></i>&nbsp;&nbsp;Google Play</a></li>
+                </ul>
+            </div>
+            <!-- /Links out -->
+
+            <div class="owl-carousel portfolio-page-carousel" style="padding-top: 5%;">
+                    <img src="images/portfolio/full/gardentails/GT-iOS_Screenshot-01.png" alt="iOS Screenshots 01" />
+                <div class="item">
+                    <img src="images/portfolio/full/gardentails/GT-iOS_Screenshot-02.png" alt="iOS Screenshots 02" />
+                </div> 
+            </div>
+            </div>
+
+            <div class="portfolio-page-image" style="padding-top: 10%;">
+                    <h2>VIDEO ADVERTISEMENT</h2>
+                    <p style="text-align: center;">The nature of my work with the production of ads is confidential. Thus, I can only showcase one video, I made, that was once the top of its prime. Many of our ads have been run in Facebook & ad network campaigns.</p>
+                </div>
+
+            <div class="colorblock">
+                <div class="portfolio-page-image">
+                    <div class="portfolio-page-video embed-responsive embed-responsive-16by9" style="margin-top: 3%; margin-bottom: 10%">
+                        <iframe src="https://player.vimeo.com/video/704746632?h=3681c041ce&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Garden Tails"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
+            </div><br><br>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+            
+                <!-- Footer  -->
+            <div class="project-description" style="text-align: center; width: 100%; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; background-color: #fafafa;">
+                <h3>Team</h3>
+                    <ul class="project-general-info" style="display: inline-block; text-align: left;">
+                        <div class="team"><li><p><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #000000;"></i>Game Producer: Grant Reid</p></li></div>
+                        <div class="team"><li><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #000000"></i>Marketing Lead & Designer: Emily Lim</li></div>
+                    </ul>
+
+                <h3 style="padding-top: 3%">Tools</h3>
+                    <div class="photoshop"></div>
+                    <div class="aftereffects"></div>
+                    <div class="sublime"></div>
+                    <div class="jekyll"></div>
+
+                <div class="block">All rights reserved. © Playdots Inc. </div>
+            </div>
+                <!-- Footer -->
+
+        </div>
+    </div>
+</div>

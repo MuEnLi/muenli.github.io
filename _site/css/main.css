@@ -770,8 +770,6 @@ body > footer .copyrights {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
 /* /Main menu */
 
 /* Header Social Links */
@@ -1724,7 +1722,7 @@ body > footer .copyrights {
   .header::-webkit-scrollbar,
   .portfolio-page-content::-webkit-scrollbar {
     position: absolute;
-    width: 15px;
+    width: 10px;
     margin-left: -5px;
   }
    

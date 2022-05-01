@@ -1,0 +1,266 @@
+<style type="text/css">
+    .page-ajax-loaded {
+        background-color: #eeeeee;
+    }
+
+    .ajax-page-wrapper {
+        background-color: #eeeeee;
+    } /*Change background*/
+
+    .ajax-page-wrapper > div.row {
+        margin-right: 50px;
+    }
+
+    .ajax-page-nav > div.nav-item {
+        margin: 30px;
+        padding-right: 5px;
+        padding-top: 30px;
+        z-index: 999;
+    }
+
+    .ajax-page-nav > div.nav-item a {
+        color: #767676;
+        background-color: #ffffff;
+        border-radius: 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid #bdbdbd;
+        position: fixed;
+    } /*Change close button*/
+
+    .ajax-page-nav > div.nav-item a:hover {
+        background-color: #f2f2f2;
+        color: #767676;
+    }
+
+    .project-description {
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.33);
+        box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.33);
+    } /*Change background of project desc*/
+
+    .block-title h3:after {
+        background-color: #689f38;
+    } /*Change color of h3 underline*/
+
+    .photoshop {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #689f38;
+        -webkit-mask:url("images/icons/PS.png") center/contain;
+        mask:url("images/icons/PS.png") center/contain;
+    }
+
+    .aftereffects {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        background: #689f38;
+        -webkit-mask:url("images/icons/AE.png") center/contain;
+        mask:url("images/icons/AE.png") center/contain;
+    }
+
+    .project-general-info .fa {
+        color: #689f38;
+        padding: 5px;
+    } /*Change color of fa icons*/
+
+    h3 {
+        color: #000000;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        color: #000000;
+    }
+
+    p {
+        color: #000000;
+    }
+
+    hr.solid {
+        border-top: 3px solid #dbdbdb;
+        padding-bottom: 10%;
+    }
+
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 100%; /* 16:9 */
+        padding-top: 10px;
+        height: 0;
+    }
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        margin:0 auto;
+        padding-bottom: 10%;
+    }
+
+    .lightbox .mfp-img a {
+        z-index: 9999;
+        position: relative;
+    }
+
+    @media only screen and (max-width: 950px) {
+        .ajax-page-wrapper {
+            max-width: 100%;
+        }
+
+        .ajax-page-wrapper > div.row {
+            margin-right: 20px;
+        }
+
+        .ajax-page-nav > div.nav-item a {
+            max-width: 30px;
+            max-height: 30px;
+        }
+
+        .ajax-page-nav > div.nav-item {
+            margin-right: 15px;
+        }
+
+        .ajax-page-nav > div.nav-item a i {
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .social-links a {
+            color: #fa75ac;
+        }
+    }
+</style>
+
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%;">
+                    <img src="images/portfolio/full/matchcity/MC-Android_Screenshot-01.png" alt="Android Screenshots 01" />    
+                        <div class="item">
+                    <img src="images/portfolio/full/matchcity/MC-Android_Screenshot-02.png" alt="Android Screenshots 02" />
+                        </div>
+                </div>
+
+                <hr class="solid">
+
+                <h4>Character Design</h4>
+                <p style="font-size: 16px; padding-right: 3%;">Using stock assets, I redesigned the character in a similar style to 'Kim Kardashian: Hollywood' and included other outfits + elements to tell a story of her progression.</p>
+                <div class="portfolio-page-image" style="padding-top: 5%; padding-bottom: 10%;">
+                    <a class="lightbox" title="MC Girl Protagonist" href="images/portfolio/full/matchcity/MC-Girl-CharOutfits.png"><img src="images/portfolio/full/matchcity/MC-Girl-CharOutfits.png" alt="MC Girl Protagonist" class="lightbox mfp-iframe"></a>
+                </div>
+
+                <hr class="solid">
+
+                <h4 style="padding-bottom:5%;">Video Advertisement</h4>
+                <h4 style="font-size: 18px; text-decoration: underline">Match City - Choices</h4>
+                <div class="container" style="padding-top: 5%">
+                  <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/704641235?h=f45d871c87&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Match City - Choices"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                  </div>
+                </div>
+
+                <p style="font-size: 16px; padding-right: 3%;">Rough storyboard</p>
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%;">
+                    <img src="images/portfolio/full/matchcity/MC-Storyboard-01.png" alt="Choices Storyboard 01" />    
+                        <div class="item">
+                    <img src="images/portfolio/full/matchcity/MC-Storyboard-02.png" alt="Choices Storyboard 02" />
+                        </div>
+                </div>
+
+                <h4 style="font-size: 18px; text-decoration: underline; padding-top: 20%;">Match City - Customize</h4>
+                <div class="container" style="padding-top: 5%">
+                  <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/705005014?h=9ab06d2d0a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Match City - Customize"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                  </div>
+                </div>
+
+                <p style="font-size: 16px; padding-right: 3%;">Rough storyboard</p>
+                <div class="owl-carousel portfolio-page-carousel" style="padding-bottom: 3%;">
+                    <img src="images/portfolio/full/matchcity/MC-Storyboard-03.png" alt="Customize Storyboard 01" />    
+                        <div class="item">
+                    <img src="images/portfolio/full/matchcity/MC-Storyboard-04.png" alt="Customize Storyboard 02" />
+                        </div>
+                </div>
+                    
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Match City</h3>
+                    </div>
+
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user-friends"></i>Playdots Inc.</p></li>
+                    </ul>
+
+                    <br>
+
+                    <p class="text-justify">The marketing creative team developed art assets in-house with myself taking lead in providing both illustrations and app store assets. Extensive research was first completed to ensure that all stakeholders were aligned on what was being provided as well as the timeline.</p>
+
+                    <br>
+
+                    <h5>Team</h5>
+                        <ul class="project-general-info">
+                            <li><p><i class="fas fa-tasks" style="padding-right: 10px; padding-left: 5px; color: #689f38;"></i>Marketing Design Lead: Emily Lim</p></li>
+                            <li><p><i class="fas fa-magic" style="padding-right: 10px; padding-left: 5px; color: #689f38"></i>Marketing Designer: Yunjia Yang</p></li>
+                        </ul>
+
+                    <br>
+
+                    <h5>Tools</h5>
+                        <div class="photoshop"></div>
+                        <div class="aftereffects"></div>
+
+                    <br><br><br>
+
+                    <p class="text-justify">All rights reserved. © Playdots Inc.</p>
+                </div>
+                <!-- Project Description -->
+
+            </div>
+        </div>
+    </div>
+</div>
