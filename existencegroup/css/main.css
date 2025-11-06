@@ -1,0 +1,249 @@
+    :root {
+      --bg:#ffffff;
+      --ink:#111;
+      --muted:#5b5b5b;
+      --line:#e6e6ea;
+      --brand:#0a3ea2;
+      --brand-ink:#ffffff;
+      --card:#0f4ccf;
+      --card-ink:#fff;
+      --accent:#0a3ea2;
+      --focus: #0f62fe;
+      --max:1200px;
+      --rh:68px;
+    }
+
+    *{box-sizing:border-box}
+    html,body {
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    img {
+      max-width:100%;
+      display:block;
+    }
+    
+    a {
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .wrap {
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    /* Header */
+    .site-header {
+      border-bottom:1px solid var(--line);
+      background:#fff;
+    }
+
+    .bar {
+      display:flex; align-items:center;
+      justify-content:space-between;
+      height:var(--rh);
+    }
+
+    .logo {
+      display:inline-block;
+      align-items:left;
+      max-width:300px;
+      margin-left: -15px;
+    }
+
+    .mark {
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-size:11px;
+      color:#666;
+    }
+
+    .mark i {
+      width:6px;
+      height:6px;
+      border:1px solid #000;
+      border-radius:50%;
+    }
+
+    .hero.full {
+      padding:0;
+      margin:0;
+    }
+
+    .hero.full .title {
+      padding:24px 20px;
+      max-width:var(--max);
+      margin:0 auto;
+    }
+
+    .hero.full .hero-media {
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      border-radius:0;
+      border:none;
+      aspect-ratio:16/7;
+      background:center/cover no-repeat;
+    }
+
+    /* Earnings strip */
+    .strip{
+      padding:28px 0;
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:1.1fr .9fr .9fr .9fr;
+      gap:20px;
+      align-items:stretch;
+    }
+
+    .vline {
+      border-left:1px solid var(--line);
+    }
+
+    .h {
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:44px;
+      line-height:1.20em;
+      letter-spacing:-.01em;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:40px;
+      border:1px solid var(--ink);
+      padding:10px 14px;
+      border-radius:8px; 
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .card {
+      padding:8px 4px 8px 24px;
+    }
+
+    .card h3 {
+      margin:0 0 6px;
+      font-size:20px;
+    }
+
+    .meta {
+      margin-top:40px;
+    }
+
+    .meta a {
+      color:var(--accent);
+      font-weight:600;
+    }
+
+    /* Mission block */
+    .mission {
+      margin:50px 0 48px;
+      background:#3a5aa5;
+      color:var(--card-ink);
+    }
+
+    .mission-inner {
+      display:grid;
+      grid-template-columns:90px 1fr;
+      gap:18px;
+      padding:28px;
+    }
+
+    .glyph {
+      width:90px;
+      height:90px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+    }
+
+    .mission p {
+      margin:0 0 16px;
+      line-height:1.5;
+      font-size:18px;
+    }
+
+    .mission a:hover {
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      text-underline-offset: 3px;
+    }
+
+    .cta {
+      display:inline-block;
+      color:#ffffff;
+      font-weight:700;
+    }
+
+    /* Footer */
+    .site-footer {
+      padding:32px 0 60px;
+      border-top:1px solid var(--line); 
+      olor:var(--muted);
+      font-size:14px;
+    }
+
+    /* Dividers between cards */
+    .cards > .vline {
+      padding-left:24px;
+    }
+
+    /* Focus states */
+    .btn:focus, .cta:focus, a:focus {
+      outline:2px solid var(--focus);
+      outline-offset:2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .cards {
+        grid-template-columns:1fr;
+        gap:12px;
+      }
+
+      .btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .meta {
+        margin-top: 20px;
+      }
+
+      .cards > .vline {
+        border-left:none;
+        border-top:1px solid var(--line);
+        padding:30px 30px 30px 0;
+      }
+
+      .h {
+        font-size:36px;
+      }
+
+      .hero .title {
+        font-size:28px;
+      }
+
+      .mission-inner {
+        grid-template-columns:1fr;
+        text-align:center;
+        justify-items:center;
+      }
+
+      .glyph {
+        width:64px;
+        height:64px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-bottom:16px;
+      }
+    }
